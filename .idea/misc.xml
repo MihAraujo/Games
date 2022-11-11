@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/background_border_main.xml" value="0.335" />
+        <entry key="app/src/main/res/drawable/background_button.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/background_gradient.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/background_level.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/background_user.xml" value="0.4185" />
+        <entry key="app/src/main/res/drawable/joystick.xml" value="0.4185" />
+        <entry key="app/src/main/res/font/.xml" value="0.37395833333333334" />
+        <entry key="app/src/main/res/font/Inter.xml" value="0.6213541666666667" />
+        <entry key="app/src/main/res/layout/activity_game_list.xml" value="0.5911458333333334" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5770833333333333" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/horder_layout.xml" value="0.575" />
+        <entry key="app/src/main/res/menu/menu_game_list.xml" value="0.5911458333333334" />
+        <entry key="app/src/main/res/menu/menu_new_user.xml" value="0.5901041666666667" />
+        <entry key="app/src/main/res/menu/menu_signup.xml" value="0.5223958333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

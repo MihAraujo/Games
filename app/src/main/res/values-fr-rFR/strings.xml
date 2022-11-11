@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jeux</string>
+    <string name="login">Connexion</string>
+    <string name="copyright">Développé par Milena Araujo</string>
+    <string name="welcome">Accueillir!</string>
+    <string name="text_welcome">Avec notre application, il sera beaucoup plus facile et amusant de garder une trace de vos jeux!</string>
+    <string name="your_email">Votre e-mail</string>
+    <string name="your_pass">Votre mot de passe</string>
+    <string name="remember_me">Souviens-toi de moi</string>
+    <string name="create_an_account">Créer un compte</string>
+
+    <string name="new_account">Nouveau compte</string>
+    <string name="shall_chose_photo">Allons-nous choisir une photo?</string>
+    <string name="data_for_authentication">Données d\'authentification</string>
+    <string name="personal_data">Données personnelles</string>
+    <string name="what_is_your_name">Quel est ton nom?</string>
+    <string name="what_is_your_town">Quelle est ta ville?</string>
+    <string name="birth_date">Date de naissance</string>
+    <string name="gaming_level">Quel est ton niveau de jeu?</string>
+    <string name="favorite_console">Quelle est votre console préférée?</string>
+    <string-array name="consoles">
+        <item>
+            New Nintendo 3DS XL
+        </item>
+        <item>
+            Nintendo Switch Lite
+        </item>
+        <item>
+            Playstation 4 Slim
+        </item>
+        <item>
+            Xbox One S
+        </item>
+        <item>
+            Nintendo Switch
+        </item>
+        <item>
+            Playstation 4 Pro
+        </item>
+        <item>
+            Xbox One X
+        </item>
+    </string-array>
+    <string name="sex">Sexe: </string>
+    <string name="feminine">Féminin</string>
+    <string name="masculine">Homme</string>
+
+    <string name="games_finished">Jeux terminés</string>
+    <string name="currently_playing">Lecture en cours</string>
+    <string name="age">Âge</string>
+</resources>

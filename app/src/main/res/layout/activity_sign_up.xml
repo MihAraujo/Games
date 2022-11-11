@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="-12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:srcCompat="@drawable/ic_wavesup" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/new_account"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@color/blue_waves"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="-12dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+        app:srcCompat="@drawable/ic_wavesdown"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@color/blue_waves"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="false"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/shall_chose_photo"
+                android:textColor="@color/blue_icons"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/image_person"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="-10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_camera"
+                app:srcCompat="@drawable/ic_person" />
+
+            <ImageView
+                android:id="@+id/image_camera"
+                android:layout_width="23dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="-5dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/image_person"
+                app:layout_constraintStart_toEndOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                app:srcCompat="@drawable/ic_camera" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="34dp"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="6dp"
+                android:drawableTint="@color/blue_icons"
+                android:fontFamily="@font/roboto"
+                android:text="@string/data_for_authentication"
+                android:textColor="@color/blue_icons"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_person" />
+
+            <EditText
+                android:id="@+id/editTextEmailSignUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="42dp"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/your_email"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <EditText
+                android:id="@+id/editTextPasswordSignUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/your_pass"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextEmailSignUp"
+                app:layout_constraintStart_toStartOf="@+id/editTextEmailSignUp"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEmailSignUp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="6dp"
+                android:drawableTint="@color/blue_icons"
+                android:fontFamily="@font/roboto"
+                android:text="@string/personal_data"
+                android:textColor="@color/blue_icons"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/editTextPasswordSignUp"
+                app:layout_constraintTop_toBottomOf="@+id/editTextPasswordSignUp" />
+
+            <EditText
+                android:id="@+id/editTextNameSignUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="42dp"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/what_is_your_name"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <EditText
+                android:id="@+id/editTextTownSignUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/what_is_your_town"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextNameSignUp"
+                app:layout_constraintStart_toStartOf="@+id/editTextNameSignUp"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNameSignUp" />
+
+            <EditText
+                android:id="@+id/editTextBirthSignUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/birth_date"
+                android:inputType="date"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTownSignUp"
+                app:layout_constraintStart_toStartOf="@+id/editTextTownSignUp"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTownSignUp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/gaming_level"
+                android:textColor="@color/color_text"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/editTextBirthSignUp"
+                app:layout_constraintTop_toBottomOf="@+id/editTextBirthSignUp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/second_blue"
+                android:stepSize="1"
+                android:valueFrom="1"
+                android:valueTo="27"
+                app:layout_constraintEnd_toStartOf="@+id/edit_slider_level"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/edit_slider_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Casual"
+                android:textColor="@color/second_blue"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/slider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.878"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/slider"
+                app:layout_constraintVertical_bias="0.562" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/favorite_console"
+                android:textColor="@color/color_text"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/slider"
+                app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/appCompatSpinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="42dp"
+                android:entries="@array/consoles"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView12"
+                app:layout_constraintTop_toBottomOf="@id/textView12" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/sex"
+                android:textColor="@color/color_text"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/appCompatSpinner"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatSpinner" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+                <RadioButton
+                    android:id="@+id/button_fem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/color_text"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/feminine"
+                    android:textColor="@color/color_text"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/button_masc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/color_text"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/masculine"
+                    android:textColor="@color/color_text"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

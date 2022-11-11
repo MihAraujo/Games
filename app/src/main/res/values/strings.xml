@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Games</string>
+    <string name="login">Login</string>
+    <string name="copyright">Developed by Milena Araujo</string>
+    <string name="welcome">Welcome!</string>
+    <string name="text_welcome">With our app it will be much easier and more fun to keep track of your games!</string>
+    <string name="your_email">Your email</string>
+    <string name="your_pass">Your password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="create_an_account">Create an account</string>
+
+    <string name="new_account">New account</string>
+    <string name="shall_chose_photo">Shall we choose a photo?</string>
+    <string name="data_for_authentication">Data for authentication</string>
+    <string name="personal_data">Personal data</string>
+    <string name="what_is_your_name">What is your name?</string>
+    <string name="what_is_your_town">What is your town?</string>
+    <string name="birth_date">Birth date</string>
+    <string name="gaming_level">What is your gaming level?</string>
+    <string name="favorite_console">What is your favorite console?</string>
+    <string-array name="consoles">
+        <item>
+            New Nintendo 3DS XL
+        </item>
+        <item>
+            Nintendo Switch Lite
+        </item>
+        <item>
+            Playstation 4 Slim
+        </item>
+        <item>
+            Xbox One S
+        </item>
+        <item>
+            Nintendo Switch
+        </item>
+        <item>
+            Playstation 4 Pro
+        </item>
+        <item>
+            Xbox One X
+        </item>
+    </string-array>
+    <string name="sex">Sex: </string>
+    <string name="feminine">Feminine</string>
+    <string name="masculine">Masculine</string>
+    
+    <string name="games_finished">Games finished</string>
+    <string name="currently_playing">Currently Playing</string>
+    <string name="age">Age</string>
+    <string name="registered_games">Your registered games</string>
+</resources>
