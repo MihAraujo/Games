@@ -8,7 +8,7 @@ import android.widget.Toast
 
 class SignUpActivity : AppCompatActivity() {
 
-    lateinit var editNam
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
