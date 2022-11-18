@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Jogog</string>
+    <string name="app_name">Jogos</string>
     <string name="login">Login</string>
-    <string name="copyright">Desenvolvido by Milena Araujo</string>
+    <string name="copyright">Desenvolvido por Milena Araujo</string>
     <string name="welcome">Bem-vindo!</string>
     <string name="text_welcome">Com nosso aplicativo será muito mais fácil e divertido acompanhar seus jogos!</string>
     <string name="your_email">Seu e-mail</string>

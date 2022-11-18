@@ -49,4 +49,5 @@
     <string name="currently_playing">Currently Playing</string>
     <string name="age">Age</string>
     <string name="registered_games">Your registered games</string>
+    <string name="saved_user">Saved User!</string>
 </resources>

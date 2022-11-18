@@ -12,11 +12,18 @@ class Console {
     @PrimaryKey(autoGenerate = true)
     var id = 0
 
+    @ColumnInfo(name = "console_name")
     var nome = ""
-    var fabricante = ""
-    var descricao = ""
-    var foto: Bitmap? = null
 
-    @ColumnInfo(name = "ano_lancamento")
+    @ColumnInfo(name = "console_fabricante")
+    var fabricante = ""
+
+    @ColumnInfo(name = "console_descricao")
+    var descricao = ""
+
+//    @ColumnInfo(name = "console_foto")
+//    var foto: Bitmap? = null
+
+    @ColumnInfo(name = "console_ano_lancamento")
     var anoLancamento = 0
 }

@@ -14,19 +14,10 @@
         android:theme="@style/Theme.Games"
         tools:targetApi="31">
         <activity
-            android:name=".SignUpActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GameListActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.GameList"
-            android:exported="false" />
-        <activity
             android:name=".ui.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.GameListActivity"
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
