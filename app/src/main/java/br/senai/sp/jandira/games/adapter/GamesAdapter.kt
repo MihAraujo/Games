@@ -39,7 +39,7 @@ class GamesAdapter(val context: Context) : RecyclerView.Adapter<GamesAdapter.Hol
     }
 
     override fun onBindViewHolder(holder: HolderGame, position: Int) {
-        holder.bind(gameList.get(position))
+        holder.bind(gameList[position])
     }
 
     override fun getItemCount(): Int {
