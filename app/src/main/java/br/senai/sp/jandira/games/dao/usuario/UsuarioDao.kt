@@ -1,10 +1,14 @@
 package br.senai.sp.jandira.games.dao.usuario
 
 import androidx.room.*
+import br.senai.sp.jandira.games.model.UserWithGame
 import br.senai.sp.jandira.games.model.Usuario
 
 @Dao
 interface UsuarioDao {
+    @Transaction
+    @Query("SELECT * FROM tbl_usuario WHERE id =: id")
+    fun getUserGame(id: Int): List<UserWithGame>
 
     @Insert
     fun save(usuario: Usuario): Long

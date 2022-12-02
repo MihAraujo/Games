@@ -156,7 +156,7 @@
         app:layout_constraintVertical_bias="0.459">
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/games_text_view_level"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="22dp"
@@ -174,9 +174,9 @@
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_marginStart="6dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView20"
+            app:layout_constraintBottom_toBottomOf="@+id/games_text_view_level"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView20"
+            app:layout_constraintTop_toTopOf="@+id/games_text_view_level"
             app:srcCompat="@drawable/level_img" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,15 +1,25 @@
 package br.senai.sp.jandira.games.ui
 
+import android.content.Context
+import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import br.senai.sp.jandira.games.R
 import br.senai.sp.jandira.games.databinding.ActivitySignUpBinding
+import br.senai.sp.jandira.games.model.Console
 import br.senai.sp.jandira.games.model.NiveisEnum
 import br.senai.sp.jandira.games.model.Usuario
+import br.senai.sp.jandira.games.repository.ConsoleRepository
 import br.senai.sp.jandira.games.repository.UsuarioRepository
+import br.senai.sp.jandira.games.utils.getBitmapFromUri
+import br.senai.sp.jandira.games.utils.getByteArrayFromBitmap
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -17,6 +27,7 @@ class SignUpActivity : AppCompatActivity() {
     lateinit var usuarioRepository: UsuarioRepository
     lateinit var usuario: Usuario
     private var id = 0
+    private var photo: Bitmap? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +40,17 @@ class SignUpActivity : AppCompatActivity() {
         binding.slider.addOnChangeListener { slider, value, fromUsuario ->
             binding.editSliderLevel.text = getSliderText(binding.slider.value.toInt()).toString()
         }
+
+        binding.imagePerson.setOnClickListener {
+            getImageGallery()
+        }
+
+        supportActionBar?.setBackgroundDrawable(
+            ColorDrawable(
+                ContextCompat.getColor(this, R.color.blue_waves)
+            )
+        )
+        setupSpinner()
     }
 
     private fun getSliderText(position: Int): NiveisEnum {
@@ -61,7 +83,9 @@ class SignUpActivity : AppCompatActivity() {
         usuario.senha = binding.editTextPasswordSignUp.text.toString()
         usuario.nome = binding.editTextNameSignUp.text.toString()
         usuario.cidade = binding.editTextTownSignUp.text.toString()
-//        usuario.dataNascimento = binding.editTextBirthSignUp.text.toString()
+        usuario.dataNascimento = binding.editTextBirthSignUp.text.toString()
+        usuario.foto = getByteArrayFromBitmap(photo)
+        usuario.console = ConsoleRepository(this).getConsoleByName(binding.spinnerConsoleName.selectedItem.toString())
 
         when(binding.slider.value.toInt()) {
             1 -> {
@@ -110,5 +134,23 @@ class SignUpActivity : AppCompatActivity() {
             return false
         }
         return true
+    }
+
+    private fun getImageGallery() {
+        val intent = Intent(Intent.ACTION_PICK)
+        intent.type = "image/*"
+        startActivityForResult(intent, 100)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == 100 && resultCode == RESULT_OK) {
+            photo = getBitmapFromUri(data?.data, this)
+        }
+    }
+
+    private fun setupSpinner()  {
+        val listOfConsoles = ConsoleRepository(this).getAll().map { e -> e.nome }
+        binding.spinnerConsoleName.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, listOfConsoles)
     }
 }

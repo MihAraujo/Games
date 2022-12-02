@@ -22,7 +22,7 @@ class Console {
     var descricao = ""
 
 //    @ColumnInfo(name = "console_foto")
-//    var foto: Bitmap? = null
+//    var consoleImgame: Bitmap? = null
 
     @ColumnInfo(name = "console_ano_lancamento")
     var anoLancamento = 0

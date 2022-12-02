@@ -50,4 +50,14 @@
     <string name="age">Age</string>
     <string name="registered_games">Your registered games</string>
     <string name="saved_user">Saved User!</string>
+
+    <string name="new_game">New Game</string>
+    <string name="shall_choose_photo_game">Shall we choose a photo for your game?</string>
+    <string name="name_enterprise">What is the company name?</string>
+    <string name="name_game">Whats the name of the game?</string>
+    <string name="description_game">Give a brief description of the game</string>
+    <string name="release_date">Release date of</string>
+    <string name="status_game">Are you playing and have you finished this game?</string>
+    <string name="playing">Playing</string>
+    <string name="finished">Finished</string>
 </resources>

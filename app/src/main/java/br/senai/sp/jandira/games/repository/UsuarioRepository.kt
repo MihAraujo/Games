@@ -2,6 +2,7 @@ package br.senai.sp.jandira.games.repository
 
 import android.content.Context
 import br.senai.sp.jandira.games.dao.usuario.UsuarioDb
+import br.senai.sp.jandira.games.model.UserWithGame
 import br.senai.sp.jandira.games.model.Usuario
 
 class UsuarioRepository(context: Context) {
@@ -30,5 +31,9 @@ class UsuarioRepository(context: Context) {
 
     fun getUsuarioByEmail(email: String): Usuario {
         return db.getUsuarioByEmail(email)
+    }
+
+    fun getUsuarioGame(userId: Int): List<UserWithGame> {
+        return db.getUserGame(userId)
     }
 }

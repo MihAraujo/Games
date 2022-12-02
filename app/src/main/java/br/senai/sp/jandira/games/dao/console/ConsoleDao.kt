@@ -18,6 +18,6 @@ interface ConsoleDao {
     @Query("SELECT * FROM tbl_console ORDER BY console_name ASC")
     fun getAll(): List<Console>
 
-    @Query("SELECT * FROM tbl_console WHERE id=:id")
-    fun getGameById(id: Int): Console
+    @Query("SELECT * FROM tbl_console WHERE console_name = :consoleName")
+    fun getConsoleByName(consoleName: String): Console
 }

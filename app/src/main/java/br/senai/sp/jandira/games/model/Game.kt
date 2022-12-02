@@ -1,6 +1,5 @@
 package br.senai.sp.jandira.games.model
 
-import android.graphics.drawable.Drawable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -22,5 +21,14 @@ class Game {
     @ColumnInfo(name = "descricao_name")
     var descricao = ""
 
-//    var imagem: Drawable? = null
+    @ColumnInfo(name = "game_release_date")
+    var gameReleaseGame = ""
+
+    @ColumnInfo(name = "game_status")
+    var gameStatus = ""
+
+    @ColumnInfo(name = "game_image")
+    var gameImage: ByteArray? = null
+
+    var userId = 0
 }
